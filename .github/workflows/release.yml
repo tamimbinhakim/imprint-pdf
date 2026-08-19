@@ -56,7 +56,7 @@ jobs:
       # `id-token: write` permission on this job grants the OIDC token, and
       # `NPM_CONFIG_PROVENANCE: true` makes the npm CLI fetch & use it.
       - name: Create Release Pull Request or Publish
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
           publish: pnpm release
           title: "chore: version packages"
